@@ -11,12 +11,12 @@ public class Get_ExceltoJtable02 {
 		 
 		if (choice== "EKG") 
 			{soaptarget=("/home/migoey/git/VioletBlue/src/je/panse/doro/text/samsara/6OBJ");prefixi=("Ⓔ EKG : ");}
+		else if (choice== "Chest_PA") 
+			{soaptarget=("/home/migoey/git/VioletBlue/src/je/panse/doro/text/samsara/6OBJ");prefixi=("Ⓟ chest PA : ");}
 		else if (choice== "GFS") 
-//Ⓖ	 Ⓒ	Ⓟ Ⓓ 	{soaptarget=("");prefixi=("");}
-		 	{soaptarget=(Enter.wd + "/lanuar/output_select_Jtable1");prefixi=("Ⓖ GFS : ");}
-
+			{soaptarget=("/home/migoey/git/VioletBlue/src/je/panse/doro/text/samsara/6OBJ");prefixi=("Ⓖ GFS : ");}	
 		else if (choice== "CFS") 
-		 	{soaptarget=("");prefixi=("");}
+			{soaptarget=("/home/migoey/git/VioletBlue/src/je/panse/doro/text/samsara/6OBJ");prefixi=("Ⓒ CFS : ");}
 		else {
 			soaptarget=(Enter.wd + "/output_select_Jtable");prefixi=("");
 		 }
@@ -24,3 +24,6 @@ public class Get_ExceltoJtable02 {
 		 Librexls_JtableCall.main(Enter.wd + "/lanu/Lnuarius.xls",prefixi,soaptarget,choice);
 	 }
 }
+
+//Ⓖ	 Ⓒ	Ⓟ Ⓓ 	{soaptarget=("");prefixi=("");}
+//https://ecgwaves.com/wp-content/uploads/2017/10/Pocket-guide-ECG-interpretation.pdf
