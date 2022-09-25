@@ -1,0 +1,3 @@
+				buttons[i].setPreferredSize(new Dimension(300, 60));
+				buttons[i].setSize(80, 80);
+				buttons[i].addActionListener(new ActionListener(){
