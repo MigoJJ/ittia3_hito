@@ -10,13 +10,13 @@ public class Get_ExceltoJtable02 {
 		 String prefixi ="";
 		 
 		if (choice== "EKG") 
-			{soaptarget=("/home/migoey/git/VioletBlue/src/je/panse/doro/text/samsara/6OBJ");prefixi=("Ⓔ EKG : ");}
+			{soaptarget=("/home/migowj/ittia1_chart/je/panse/doro/text/samsara/6OBJ");prefixi=("Ⓔ EKG : ");}
 		else if (choice== "Chest_PA") 
-			{soaptarget=("/home/migoey/git/VioletBlue/src/je/panse/doro/text/samsara/6OBJ");prefixi=("Ⓟ chest PA : ");}
+			{soaptarget=("/home/migowj/ittia1_chart/je/panse/doro/text/samsara/6OBJ");prefixi=("Ⓟ chest PA : ");}
 		else if (choice== "GFS") 
-			{soaptarget=("/home/migoey/git/VioletBlue/src/je/panse/doro/text/samsara/6OBJ");prefixi=("Ⓖ GFS : ");}	
+			{soaptarget=("/home/migowj/ittia1_chart/je/panse/doro/text/samsara/6OBJ");prefixi=("Ⓖ GFS : ");}	
 		else if (choice== "CFS") 
-			{soaptarget=("/home/migoey/git/VioletBlue/src/je/panse/doro/text/samsara/6OBJ");prefixi=("Ⓒ CFS : ");}
+			{soaptarget=("/home/migowj/ittia1_chart/je/panse/doro/text/samsara/6OBJ");prefixi=("Ⓒ CFS : ");}
 		else {
 			soaptarget=(Enter.wd + "/output_select_Jtable");prefixi=("");
 		 }
