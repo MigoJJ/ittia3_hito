@@ -17,11 +17,17 @@ public class Get_ExceltoJtable02 {
 			{soaptarget=("/home/migowj/ittia1_chart/je/panse/doro/text/samsara/6OBJ");prefixi=("Ⓖ GFS : ");}	
 		else if (choice== "CFS") 
 			{soaptarget=("/home/migowj/ittia1_chart/je/panse/doro/text/samsara/6OBJ");prefixi=("Ⓒ CFS : ");}
+		else if (choice== "ROS") 
+		{soaptarget=("/home/migowj/ittia1_chart/je/panse/doro/text/samsara/5SUJ");prefixi=(">");}
+		else if (choice== "9PLAN") 
+		{soaptarget=("/home/migowj/ittia1_chart/je/panse/doro/text/samsara/9PLAN");prefixi=("...");}
+		else if (choice== "ExtraLab") 
+		{soaptarget=("/home/migowj/ittia1_chart/je/panse/doro/text/samsara/6OBJ");prefixi=("");}
 		else {
 			soaptarget=(Enter.wd + "/output_select_Jtable");prefixi=("");
 		 }
 		 		 
-		 Librexls_JtableCall.main(Enter.wd + "/lanu/Lnuarius.xls",prefixi,soaptarget,choice);
+		 Librexls_JtableCall.main(Enter.wd + "/lanu/Lanuarius.xls",prefixi,soaptarget,choice);
 	 }
 }
 

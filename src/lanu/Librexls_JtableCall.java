@@ -80,11 +80,18 @@ public class Librexls_JtableCall {
 	             JTable source = (JTable)e.getSource();
 	             int row = source.rowAtPoint( e.getPoint() );
 	             int column = source.columnAtPoint( e.getPoint() );
-	             System.out.print("\t"+ soaptit + table.getValueAt(row, column)+"\n");
+//	             System.out.print("\t"+ soaptit + table.getValueAt(row, column)+"\n");
 	             
 	             String dtext = ("\t" + soaptit + table.getValueAt(row, column)).toString(); 
 	     		    	File_cdrw_proc fcp1 = new File_cdrw_proc(); 
 			           try {
+			        	   
+			        	   dtext= dtext.replace("        ", "\n\t    ");
+			        	   dtext= dtext.replace(">•", ".");
+
+			        	   System.out.println(dtext);
+			        	   
+			        	   
 			   			fcp1.writeliner(soaptar,dtext);
 			    		} catch (IOException e1) {
 			    			// TODO Auto-generated catch block

@@ -14,7 +14,7 @@ public class DisplayButtonMessage extends JFrame {
 	public DisplayButtonMessage(){
 		JButton[] buttons = new JButton[26];
 		panel=new JPanel(new GridLayout(13,2));
-		String  b[]={"GFS","CFS","EKG","Chest_PA","-","-","ROS","9PLAN","I","J","K","L","M","N",
+		String  b[]={"GFS","CFS","EKG","Chest_PA","-","-","ROS","9PLAN","ExtraLab","J","K","L","M","N",
 		"O","P","Q","R","S","T","U","V","W","X","Y","Z"};
 		for(i = 0; i < buttons.length; i++) {
 			buttons[i] = new JButton(b[i]);
@@ -26,10 +26,6 @@ public class DisplayButtonMessage extends JFrame {
 				public void actionPerformed(ActionEvent e) {
 				  String choice = e.getActionCommand();
 //				  JOptionPane.showMessageDialog(null, "You have clicked: "+choice);
-				  System.out.println("choice  >>   " + choice);
-				  
-				  
-				  
 				  Get_ExceltoJtable02.main(choice);
 				  }
 			});

@@ -1,3 +1,14 @@
 				buttons[i].setPreferredSize(new Dimension(300, 60));
 				buttons[i].setSize(80, 80);
 				buttons[i].addActionListener(new ActionListener(){
+	Uric acid [   ] mg/dL
+	HBsAg[-] HbsAb[+] 
+	HBsAg[+] HbsAb[-] 
+	HBsAg[+]  →  HbsAg[+] 
+	 Anti HCV [+]
+	HbsAg carrier
+	 Anti HCV [+]
+	PSA   [   ]  ng/mL < 4.0
+	AFP  [   ]  ng/mL  < 8.1
+	CRP 정량 [   ] mg/dL  0.1-0.5
+	CA125  [   ]  U/mL <35
