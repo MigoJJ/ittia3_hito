@@ -88,9 +88,14 @@ public class Librexls_JtableCall {
 			        	   
 			        	   dtext= dtext.replace("        ", "\n\t    ");
 			        	   dtext= dtext.replace(">•", ".");
-
 			        	   System.out.println(dtext);
-			        	   
+			   		 
+			       	    Scanner myObj = new Scanner(System.in);  // Create a Scanner object
+			       		System.out.println("Enter Lab DATA ...   : ");
+
+			       	    String lab_data = myObj.nextLine();  // Read user input
+			       	    System.out.println("lab_data is: " + lab_data); 	
+			        	dtext= dtext.replace("[   ]", "[" + lab_data + "]");
 			        	   
 			   			fcp1.writeliner(soaptar,dtext);
 			    		} catch (IOException e1) {

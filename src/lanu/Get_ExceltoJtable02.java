@@ -22,7 +22,10 @@ public class Get_ExceltoJtable02 {
 		else if (choice== "9PLAN") 
 		{soaptarget=("/home/migowj/ittia1_chart/je/panse/doro/text/samsara/9PLAN");prefixi=("...");}
 		else if (choice== "ExtraLab") 
-		{soaptarget=("/home/migowj/ittia1_chart/je/panse/doro/text/samsara/6OBJ");prefixi=("");}
+//		{soaptarget=("/home/migowj/ittia1_chart/je/panse/doro/text/samsara/6OBJ");prefixi=("");}
+
+		{soaptarget=("/home/migoey/git/Lanu_VioletBlue_V0.1/src/output_select_Jtable");prefixi=("");}
+		
 		else {
 			soaptarget=(Enter.wd + "/output_select_Jtable");prefixi=("");
 		 }
