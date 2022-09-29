@@ -1,14 +1,17 @@
-				buttons[i].setPreferredSize(new Dimension(300, 60));
-				buttons[i].setSize(80, 80);
-				buttons[i].addActionListener(new ActionListener(){
-	Uric acid [   ] mg/dL
+	PSA   [4.3]  ng/mL < 4.0
 	HBsAg[-] HbsAb[+] 
-	HBsAg[+] HbsAb[-] 
-	HBsAg[+]  →  HbsAg[+] 
-	 Anti HCV [+]
+	HBsAg[-] HbsAb[+] 
+	CRP 정량 [0.8] mg/dL  0.1-0.5
+	CA19-9  [35.5]  U/mL  <37
+	HBsAg[-] HbsAb[+] 
+	Uric acid [7.9] mg/dL
+	AFP  []  ng/mL  < 8.1
+	AFP  [6.3]  ng/mL  < 8.1
+	CA125  [139]  U/mL <35
+	CRP 정량 [0.5] mg/dL  0.1-0.5
+	HBsAg[-] HbsAb[+] 
 	HbsAg carrier
-	 Anti HCV [+]
-	PSA   [   ]  ng/mL < 4.0
-	AFP  [   ]  ng/mL  < 8.1
-	CRP 정량 [   ] mg/dL  0.1-0.5
-	CA125  [   ]  U/mL <35
+	Anti HCV [+]
+	HBsAg[-] HbsAb[+] 
+	CA19-9  [25]  U/mL  <37
+	HBsAg[-] HbsAb[+] 
