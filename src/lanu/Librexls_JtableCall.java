@@ -55,28 +55,27 @@ public class Librexls_JtableCall {
 		  };
 		 JScrollPane scroll = new JScrollPane(table);
 		 JFrame f=new JFrame();
-		 f.add(scroll);
-		 f.setSize(1000, 800);
-		 f.setLocationRelativeTo(null); 
-		 f.setResizable(true);
-		 f.setVisible(true);
-		 f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+			 f.add(scroll);
+			 f.setSize(1000, 800);
+			 f.setLocationRelativeTo(null); 
+			 f.setResizable(true);
+			 f.setVisible(true);
+			 f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		 
 		 DefaultTableModel model = new DefaultTableModel(data,headers);
-		 Font  f1  = new Font("Consolas", Font.PLAIN,  15);
-		 table.setFont(f1);
-		 table.setModel(model);
-		 table.setAutoCreateRowSorter(true);
-		 model = new DefaultTableModel(data, headers);
-		 table.setModel(model);
-		 table.setRowHeight(30);
-		 table.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);
-//		 table.getColumnModel().getColumn(0).setPreferredWidth(450);
-//		 table.getColumnModel().getColumn(1).setPreferredWidth(450);
-
-		  
+			 Font  f1  = new Font("Consolas", Font.PLAIN,  15);
+			 table.setFont(f1);
+			 table.setModel(model);
+			 table.setAutoCreateRowSorter(true);
+			 model = new DefaultTableModel(data, headers);
+			 table.setModel(model);
+			 table.setRowHeight(30);
+			 table.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);
+	//		 table.getColumnModel().getColumn(0).setPreferredWidth(450);
+	//		 table.getColumnModel().getColumn(1).setPreferredWidth(450);
+		 
 		 table.addMouseListener( new MouseAdapter(){
-	        public void mousePressed(MouseEvent e){
+			 public void mousePressed(MouseEvent e){
 	             JTable source = (JTable)e.getSource();
 	             int row = source.rowAtPoint( e.getPoint() );
 	             int column = source.columnAtPoint( e.getPoint() );
@@ -88,7 +87,6 @@ public class Librexls_JtableCall {
 			        	   
 			        	   dtext= dtext.replace("        ", "\n\t    ");
 			        	   dtext= dtext.replace(">•", ".");
-
 			        	   System.out.println(dtext);
 			        	   
 			        	   
