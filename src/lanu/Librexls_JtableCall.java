@@ -80,22 +80,25 @@ public class Librexls_JtableCall {
 	             int row = source.rowAtPoint( e.getPoint() );
 	             int column = source.columnAtPoint( e.getPoint() );
 //	             System.out.print("\t"+ soaptit + table.getValueAt(row, column)+"\n");
-	             
+
 	             String dtext = ("\t" + soaptit + table.getValueAt(row, column)).toString(); 
 	     		    	File_cdrw_proc fcp1 = new File_cdrw_proc(); 
 			           try {
+			        	   
+			        	   if (argscho=="ExtraLab"){
+								Scanner myObj = new Scanner(System.in);  // Create a Scanner object
+								System.out.println("Enter Lab DATA ...   : ");
+								String lab_data = myObj.nextLine();  // Read user input
+								System.out.println("lab_data is: " + lab_data); 	
+								dtext= dtext.replace("[   ]", "[" + lab_data + "]");
+								}
 			        	   
 			        	   dtext= dtext.replace("        ", "\n\t    ");
 			        	   dtext= dtext.replace(">•", ".");
 			        	   System.out.println(dtext);
 
-//					       	    Scanner myObj = new Scanner(System.in);  // Create a Scanner object
-//					       		System.out.println("Enter Lab DATA ...   : ");
-//					       	    String lab_data = myObj.nextLine();  // Read user input
-//					       	    System.out.println("lab_data is: " + lab_data); 	
-//					        	dtext= dtext.replace("[   ]", "[" + lab_data + "]");
-
-					        	fcp1.writeliner(soaptar,dtext);
+        	   
+			        	   fcp1.writeliner(soaptar,dtext);
 			    		} catch (IOException e1) {
 			    			// TODO Auto-generated catch block
 			    			e1.printStackTrace();
