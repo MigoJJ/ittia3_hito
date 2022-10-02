@@ -18,7 +18,7 @@ public class Get_ExceltoJtable02 {
 		int jframeW=800;
 
 		if (choice== "EKG") 
-			{soaptarget=(soaptarget + "/6OBJ");prefixi=("Ⓔ EKG : ");jframeH=1000;jframeW=600;}
+			{soaptarget=(soaptarget + "/6OBJ");prefixi=("Ⓔ EKG : ");jframeH=1400;jframeW=600;}
 		else if (choice== "Chest_PA") 
 			{soaptarget=(soaptarget + "/6OBJ");prefixi=("Ⓟ chest PA : ");jframeH=800;jframeW=800;}
 		else if (choice== "GFS") 
@@ -26,7 +26,7 @@ public class Get_ExceltoJtable02 {
 		else if (choice== "CFS") 
 			{soaptarget=(soaptarget + "/6OBJ");prefixi=("Ⓒ CFS : ");}
 		else if (choice== "ROS") 
-			{soaptarget=(soaptarget + "/4PMH");prefixi=(">");}
+			{soaptarget=(soaptarget + "/4PMH");prefixi=(">");;jframeH=1500;jframeW=900;}
 		else if (choice== "9PLAN") 
 			{soaptarget=(soaptarget + "/9PLAN");prefixi=("...");}
 		else if (choice== "ExtraLab") 
