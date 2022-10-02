@@ -10,7 +10,9 @@ import la_comm.Enter;
 public class Get_ExceltoJtable02 {
 	 public static void main(String choice) {
 		 String soaptarget = (Enter.wd + "/output_select_Jtable");
-		 soaptarget = "/home/migowj/ittia1_chart/je/panse/doro/text/samsara";
+//		 soaptarget = "/home/migowj/ittia1_chart/je/panse/doro/text/samsara";
+		 soaptarget = "/home/migoey/ittia_chart/je/panse/doro/text/samsara";
+
 		 String prefixi ="";
 			System.out.println("Enter.currentUsersHomeDir : "+ Enter.currentUsersHomeDir);
 			System.out.println("soaptarget  Dir : "+ soaptarget);
@@ -31,6 +33,10 @@ public class Get_ExceltoJtable02 {
 			{soaptarget=(soaptarget + "/9PLAN");prefixi=("...");}
 		else if (choice== "ExtraLab") 
 			{soaptarget=(soaptarget + "/6OBJ");prefixi=("");jframeH=600;jframeW=600;}
+		else if (choice== "ExtraLab_fix") 
+			{soaptarget=(soaptarget + "/6OBJ");prefixi=("");jframeH=600;jframeW=600;}
+		else if (choice== "Chest_Pain") 
+			{soaptarget=(soaptarget + "/3CC");prefixi=("");jframeH=1150;jframeW=500;}
 		else {
 			soaptarget=(Enter.wd + "/output_select_Jtable");prefixi=("");
 		}

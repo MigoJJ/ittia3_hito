@@ -1,7 +1,5 @@
 package la_comm;
 
-import java.util.Scanner;
-
 import la.DisplayButtonMessage;
 
 public class Enter {
@@ -10,11 +8,9 @@ public class Enter {
    public static String wd = (currentUsersHomeDir + "/src");
 	
 	public static void main(String[] args){
-   
 		System.out.println("Continue the program ? : ");
-
-        	System.out.println(" Migo JJ");
-			DisplayButtonMessage.main(args);
-        }
+       	System.out.println(" Migo JJ");
+		DisplayButtonMessage.main(args);
+    }
 }
 
