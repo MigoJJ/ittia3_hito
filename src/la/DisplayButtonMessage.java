@@ -15,7 +15,7 @@ public class DisplayButtonMessage extends JFrame {
 		JButton[] buttons = new JButton[26];
 		panel=new JPanel(new GridLayout(13,2));
 		String  b[]={"GFS","CFS","EKG","Chest_PA","-","-","ROS","9PLAN","ExtraLab","J","K","L","M","N",
-		"O","P","Q","R","S","T","U","V","W","X","Y","Z"};
+		"O","P","Q","R","S","T","U","V","W","X","Y","Exit"};
 		for(i = 0; i < buttons.length; i++) {
 			buttons[i] = new JButton(b[i]);
 			buttons[i].setPreferredSize(new Dimension(300, 60));
@@ -32,7 +32,7 @@ public class DisplayButtonMessage extends JFrame {
 			panel.add(buttons[i]);
 		}
 	}
-	public static void main(String[]args){
+	public static void main(String[] args){
 		DisplayButtonMessage frame=new DisplayButtonMessage();
 		frame.setTitle("More Description !!!");
 		frame.add(panel);

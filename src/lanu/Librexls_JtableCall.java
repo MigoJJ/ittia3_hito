@@ -5,6 +5,7 @@ import java.util.*;
 import javax.swing.*;
 
 import java.awt.Component;
+import java.awt.Dimension;
 import java.awt.event.*;
 import java.awt.Font;
 
@@ -12,10 +13,11 @@ import javax.swing.table.*;
 import jxl.Cell;
 import jxl.Sheet;
 import jxl.Workbook;
+import la_comm.Enter;
 import la_comm.File_cdrw_proc;
 
 public class Librexls_JtableCall {
-	 public static void main(String xlspath, String soaptit, String soaptar, String argscho) {
+	 public static void main(String xlspath, String soaptit, String soaptar, String argscho, int jframeH, int jframeW) {
 		 Vector headers = new Vector();
 		 Vector data = new Vector();
 		 File file = new File(xlspath);
@@ -53,15 +55,16 @@ public class Librexls_JtableCall {
 		      return component;
 		    }
 		  };
+		  
 		 JScrollPane scroll = new JScrollPane(table);
 		 JFrame f=new JFrame();
-			 f.add(scroll);
-			 f.setSize(1000, 800);
+		 	 f.add(scroll);
+			 f.setSize(jframeH, jframeW);
 			 f.setLocationRelativeTo(null); 
 			 f.setResizable(true);
 			 f.setVisible(true);
 			 f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		 
+			 
 		 DefaultTableModel model = new DefaultTableModel(data,headers);
 			 Font  f1  = new Font("Consolas", Font.PLAIN,  15);
 			 table.setFont(f1);
