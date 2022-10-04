@@ -13,6 +13,7 @@ import javax.swing.table.*;
 import jxl.Cell;
 import jxl.Sheet;
 import jxl.Workbook;
+import la.DisplayButtonMessage;
 import la_comm.Enter;
 import la_comm.File_cdrw_proc;
 
@@ -110,5 +111,7 @@ public class Librexls_JtableCall {
 	                 source.changeSelection(row, column, false, false);
 	         		}
 	 		});
+		 
+		 DisplayButtonMessage.main(null);
 	 }
 }
