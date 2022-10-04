@@ -15,8 +15,8 @@ public class DisplayButtonMessage extends JFrame {
 		JButton[] buttons = new JButton[26];
 		panel=new JPanel(new GridLayout(13,2));
 		String  b[]={"GFS","CFS","EKG","Chest_PA","-","-",
-				"ROS","9PLAN","ExtraLab","ExtraLab_fix",
-				"-","-","Chest_Pain","N",
+				"ROS","H","ExtraLab","ExtraLab_fix",
+				"9PLAN","ThyPx","Chest_Pain","N",
 				"O","P","Q","R","S","T","U","V","W","X","Y","Exit"};
 		for(i = 0; i < buttons.length; i++) {
 			buttons[i] = new JButton(b[i]);
