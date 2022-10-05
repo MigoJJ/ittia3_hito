@@ -111,7 +111,6 @@ public class Librexls_JtableCall {
 	                 source.changeSelection(row, column, false, false);
 	         		}
 	 		});
-		 
-		 DisplayButtonMessage.main(null);
+	 
 	 }
 }
