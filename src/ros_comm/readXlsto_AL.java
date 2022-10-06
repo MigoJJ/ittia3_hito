@@ -1,12 +1,15 @@
-package rosArray;
+package ros_comm;
 
 import java.io.File;
+import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.Vector;
+
 import jxl.Cell;
 import jxl.Sheet;
 import jxl.Workbook;
 
-public class rosArrayList {
+public class readXlsto_AL {
 	public static void main(String[] args) {
 		 Vector headers = new Vector();
 		 Vector data = new Vector();
@@ -35,7 +38,7 @@ public class rosArrayList {
 			 }
 			 for(int i = 0; i < data.size(); i++) {
 				 System.out.println(i + "==> " + data.get(i));
-				 rosArrayList.rosAL1(data.get(i));
+				 readXlsto_AL.rosAL1(data.get(i));
 			 }
 		 }
 		 catch (Exception e) {

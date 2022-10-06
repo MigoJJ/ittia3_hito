@@ -16,6 +16,7 @@ import jxl.Workbook;
 import lanuarius.la.DisplayButtonMessage;
 import lanuarius.la_comm.Enter;
 import lanuarius.la_comm.File_cdrw_proc;
+import rosArray.RosPickupList;
 
 public class Librexls_JtableCall {
 	 public static void main(String xlspath, String soaptit, String soaptar, String argscho, int jframeH, int jframeW) {
@@ -56,7 +57,6 @@ public class Librexls_JtableCall {
 		      return component;
 		    }
 		  };
-		  
 		 JScrollPane scroll = new JScrollPane(table);
 		 JFrame f=new JFrame();
 		 	 f.add(scroll);
@@ -77,7 +77,10 @@ public class Librexls_JtableCall {
 			 table.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);
 	//		 table.getColumnModel().getColumn(0).setPreferredWidth(450);
 	//		 table.getColumnModel().getColumn(1).setPreferredWidth(450);
-		 
+  	    
+			 
+			 ArrayList<String> list = new ArrayList<>();
+
 		 table.addMouseListener( new MouseAdapter(){
 			 public void mousePressed(MouseEvent e){
 	             JTable source = (JTable)e.getSource();
@@ -95,14 +98,17 @@ public class Librexls_JtableCall {
 								String lab_data = myObj.nextLine();  // Read user input
 								System.out.println("lab_data is: " + lab_data); 	
 								dtext= dtext.replace("[   ]", "[" + lab_data + "]");
-								}
-			        	   
-			        	   dtext= dtext.replace("        ", "\n\t    ");
-			        	   dtext= dtext.replace(">•", ".");
-			        	   System.out.println(dtext);
-
-        	   
-			        	   fcp1.writeliner(soaptar,dtext);
+							}
+								   
+							   dtext= dtext.replace("        ", "\n\t    ");
+							   dtext= dtext.replace(">•", ".");
+								   
+							   list.add(dtext);
+								 if (dtext !="") {
+									 RosPickupList aClass = new RosPickupList();
+									 aClass.addListfromJtable(list);
+								 }
+			        	fcp1.writeliner(soaptar,dtext);
 			    		} catch (IOException e1) {
 			    			// TODO Auto-generated catch block
 			    			e1.printStackTrace();
