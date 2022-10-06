@@ -18,7 +18,7 @@ import lanuarius.la_comm.Enter;
 import lanuarius.la_comm.File_cdrw_proc;
 import rosArray.RosPickupList;
 
-public class Librexls_JtableCall {
+public class Librexls_JtableCall2 {
 	 public static void main(String xlspath, String soaptit, String soaptar, String argscho, int jframeH, int jframeW)
 	 {
 		 Vector headers = new Vector();
