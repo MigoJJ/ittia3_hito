@@ -1,10 +1,10 @@
-package la;
+package lanuarius.la;
 
 import java.awt.*;
 import javax.swing.*;
 
-import la_comm.Enter;
-import lanu.Get_ExceltoJtable02;
+import lanuarius.la_comm.Enter;
+import lanuarius.lanu.Get_ExceltoJtable02;
 
 import java.awt.event.*;
 

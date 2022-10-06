@@ -1,4 +1,4 @@
-package la_comm;
+package lanuarius.la_comm;
 
 import java.io.File;		
 import java.io.FileNotFoundException;

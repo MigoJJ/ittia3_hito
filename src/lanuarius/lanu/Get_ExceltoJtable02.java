@@ -1,11 +1,11 @@
-package lanu;
+package lanuarius.lanu;
 
 import java.io.*;
 
 import javax.swing.JFrame;
 
-import lanu.Librexls_JtableCall;
-import la_comm.Enter;
+import lanuarius.la_comm.Enter;
+import lanuarius.lanu.Librexls_JtableCall;
 
 public class Get_ExceltoJtable02 {
 	 public static void main(String choice) {

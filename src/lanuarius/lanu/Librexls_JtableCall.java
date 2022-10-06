@@ -1,4 +1,4 @@
-package lanu;
+package lanuarius.lanu;
 
 import java.io.*;								
 import java.util.*;
@@ -13,9 +13,9 @@ import javax.swing.table.*;
 import jxl.Cell;
 import jxl.Sheet;
 import jxl.Workbook;
-import la.DisplayButtonMessage;
-import la_comm.Enter;
-import la_comm.File_cdrw_proc;
+import lanuarius.la.DisplayButtonMessage;
+import lanuarius.la_comm.Enter;
+import lanuarius.la_comm.File_cdrw_proc;
 
 public class Librexls_JtableCall {
 	 public static void main(String xlspath, String soaptit, String soaptar, String argscho, int jframeH, int jframeW) {

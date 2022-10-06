@@ -1,6 +1,6 @@
-package la_comm;
+package lanuarius.la_comm;
 
-import la.DisplayButtonMessage;
+import lanuarius.la.DisplayButtonMessage;
 
 public class Enter {
 // ------------------------------------------------------user directory definition
