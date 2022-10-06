@@ -1,4 +1,4 @@
-package ros.ros_comm;
+package ros_comm;
 
 import javax.swing.*;
 import javax.swing.table.AbstractTableModel;

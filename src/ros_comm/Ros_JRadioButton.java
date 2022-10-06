@@ -1,4 +1,4 @@
-package ros.ros_comm;
+package ros_comm;
 
 import java.awt.BorderLayout;
 import java.util.Date;
