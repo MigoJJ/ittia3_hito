@@ -9,12 +9,13 @@ import jxl.Cell;
 import jxl.Sheet;
 import jxl.Workbook;
 
-public class readXlsto_AL {
+public class readXlsto_AL2 {
 	public static void main(String[] args) {
 		 Vector headers = new Vector();
 		 Vector data = new Vector();
 //		 File file = new File("/home/migoey/git/Lanu_VioletBlue_V0.1/src/lanuarius/lanu/Lanuarius.xls");
 		 File file = new File("/home/migowj/git/Lanu_VioletBlue_V0.1/src/lanuarius/lanu/Lanuarius.xls");
+		 
 		 try {
 			 Workbook workbook = Workbook.getWorkbook(file);
 //			 Sheet sheet = workbook.getSheet(0);
@@ -30,23 +31,17 @@ public class readXlsto_AL {
 				 for (int i = 0; i < sheet.getColumns(); i++) {
 					 Cell cell = sheet.getCell(i, j);
 					 d.add(cell.getContents());
-					 
-					 if ((i==1 & j==1) | (i==2 & j==1)) {
-					 subs_d.substitute_d(cell.getContents());
-					 System.out.println("return string;" + subs_d.substitute_d(cell.getContents()));
-					 d.set(i, subs_d.substitute_d(cell.getContents()));
 					 }
-					 
-				 }
 //					 d.add("\n");
-//					 d.set(1, "(Vector) objectros).get(i)");
-				    data.add(d);
+					 
+					 d.set(1, "(Vector) objectros).get(i)");
+
+					 data.add(d);
 			 }
 			 for(int i = 0; i < data.size(); i++) {
-				 
 				 System.out.println(i + "data.get(i)==> " + data.get(i));
 //				 System.out.println(i + "data==> " + data);
-				 readXlsto_AL.rosAL1(data.get(i));
+				 readXlsto_AL2.rosAL1(data.get(i));
 			 }
 		 }
 		 catch (Exception e) {
@@ -59,15 +54,7 @@ public class readXlsto_AL {
 //			 System.out.println(" rosAL1" + i + "==>>>> " + ((Vector) objectros).get(i));
 		 }
 	}	
-}
-
-class subs_d {
-	static String substitute_d (String string) {
-	       int ii=2;	
-			if(ii==2) {
-	       string =("+" + string);
-			}
-			return string;
-	}
-
+	
+	
+	
 }

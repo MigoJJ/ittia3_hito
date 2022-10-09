@@ -48,15 +48,15 @@ public class Librexls_JtableCall {
 		 }
 		 
 		 JTable table = new JTable() {;
-	 @Override
-	    public Component prepareRenderer(TableCellRenderer renderer, int row, int column) {
-	      Component component = super.prepareRenderer(renderer, row, column);
-	      int rendererWidth = component.getPreferredSize().width;
-	      TableColumn tableColumn = getColumnModel().getColumn(column);
-	      tableColumn.setPreferredWidth(Math.max(rendererWidth + getIntercellSpacing().width, tableColumn.getPreferredWidth()));
-	      return component;
-	    }
-	  };
+ @Override
+    public Component prepareRenderer(TableCellRenderer renderer, int row, int column) {
+      Component component = super.prepareRenderer(renderer, row, column);
+      int rendererWidth = component.getPreferredSize().width;
+      TableColumn tableColumn = getColumnModel().getColumn(column);
+      tableColumn.setPreferredWidth(Math.max(rendererWidth + getIntercellSpacing().width, tableColumn.getPreferredWidth()));
+      return component;
+    }
+  };
 		 JScrollPane scroll = new JScrollPane(table);
 		 JFrame f=new JFrame();
 		 	 f.add(scroll);
@@ -77,39 +77,41 @@ public class Librexls_JtableCall {
 	//		 table.getColumnModel().getColumn(0).setPreferredWidth(450);
 	//		 table.getColumnModel().getColumn(1).setPreferredWidth(450);
 			 
-			 ArrayList<String> list = new ArrayList<>();
+ArrayList<String> list = new ArrayList<>();
 
-	 table.addMouseListener( new MouseAdapter(){
-		 public void mousePressed(MouseEvent e){
-             JTable source = (JTable)e.getSource();
-             int row = source.rowAtPoint( e.getPoint() );
-             int column = source.columnAtPoint( e.getPoint() );
-             String dtext = ("\t" + soaptit + table.getValueAt(row, column)).toString(); 
-   		     File_cdrw_proc fcp1 = new File_cdrw_proc(); 
-	         try {
-					if (argscho=="ExtraLab"){
-						Scanner myObj = new Scanner(System.in);  // Create a Scanner object
-						System.out.println("Enter Lab DATA ...   : ");
-						String lab_data = myObj.nextLine();  // Read user input
-						System.out.println("lab_data is: " + lab_data); 	
-						dtext= dtext.replace("[   ]", "[" + lab_data + "]");
+ table.addMouseListener( new MouseAdapter(){
+	 public void mousePressed(MouseEvent e){
+         JTable source = (JTable)e.getSource();
+         int row = source.rowAtPoint( e.getPoint() );
+         int column = source.columnAtPoint( e.getPoint() );
+         String dtext = ("\t" + soaptit + table.getValueAt(row, column)).toString(); 
+	     File_cdrw_proc fcp1 = new File_cdrw_proc(); 
+         try {
+				if (argscho=="ExtraLab"){
+					Scanner myObj = new Scanner(System.in);  // Create a Scanner object
+					System.out.println(dtext + "   Enter Lab DATA ...   : ");
+					String lab_data = myObj.nextLine();  // Read user input
+					
+					if (lab_data !="") {
+//					list.add(dtext);
+					RosPickupList aClass = new RosPickupList();
+					aClass.addListfromJtable(list);
+									
+					System.out.println("lab_data is: " + lab_data); 	
+					dtext= dtext.replace("[   ]", "[" + lab_data + "]");
+					dtext= dtext.replace("        ", "\n\t    ");
+					dtext= dtext.replace(">•", ".");
+					fcp1.writeliner(soaptar,dtext);
 					}
-						dtext= dtext.replace("        ", "\n\t    ");
-						dtext= dtext.replace(">•", ".");
-						   
-						list.add(dtext);
-					if (dtext !="") {
-						RosPickupList aClass = new RosPickupList();
-						aClass.addListfromJtable(list);
-					}
-	        	fcp1.writeliner(soaptar,dtext);
-	        }
-	    	catch (IOException e1) {
-	    	  e1.printStackTrace();
-	    	}
-            if (! source.isRowSelected(row))
-              source.changeSelection(row, column, false, false);
-         	}
- 		});
+				}
+
+        }
+    	catch (IOException e1) {
+    	  e1.printStackTrace();
+    	}
+        if (! source.isRowSelected(row))
+          source.changeSelection(row, column, false, false);
+     	}
+	});
 	 }
 }
