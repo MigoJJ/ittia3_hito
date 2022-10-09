@@ -97,7 +97,6 @@ ArrayList<String> list = new ArrayList<>();
 					RosPickupList aClass = new RosPickupList();
 					aClass.addListfromJtable(list);
 									
-					System.out.println("lab_data is: " + lab_data); 	
 					dtext= dtext.replace("[   ]", "[" + lab_data + "]");
 					dtext= dtext.replace("        ", "\n\t    ");
 					dtext= dtext.replace(">•", ".");
