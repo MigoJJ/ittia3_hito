@@ -44,7 +44,7 @@ public class Get_ExceltoJtable02 {
 		else {
 			soaptarget=(Enter.wd + "/output_select_Jtable");prefixi=("");
 		}
-		 Librexls_JtableCall.main("/home/migowj/GDS_chart_button/lanu/Lanuarius.xls",prefixi,soaptarget,choice,jframeH,jframeW);
+		 Librexls_JtableCall.main("/home/migowj/git/VioletBlue_buttonV0.1/src/lanu/Lanuarius.xls",prefixi,soaptarget,choice,jframeH,jframeW);
 //		 Librexls_JtableCall.main("/home/migoey/git/Lanu_VioletBlue_V0.1/src/lanuarius/lanu/Lanuarius.xls",prefixi,soaptarget,choice,jframeH,jframeW);
 		 
 	 }
