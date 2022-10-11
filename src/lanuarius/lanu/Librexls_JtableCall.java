@@ -85,6 +85,9 @@ ArrayList<String> list = new ArrayList<>();
          int row = source.rowAtPoint( e.getPoint() );
          int column = source.columnAtPoint( e.getPoint() );
          String dtext = ("\t" + soaptit + table.getValueAt(row, column)).toString(); 
+         
+         System.out.println("String dtext = " + dtext);
+         
 	     File_cdrw_proc fcp1 = new File_cdrw_proc(); 
          try {
 				if (argscho=="ExtraLab"){
@@ -100,10 +103,9 @@ ArrayList<String> list = new ArrayList<>();
 					dtext= dtext.replace("[   ]", "[" + lab_data + "]");
 					dtext= dtext.replace("        ", "\n\t    ");
 					dtext= dtext.replace(">•", ".");
-					fcp1.writeliner(soaptar,dtext);
 					}
 				}
-
+				fcp1.writeliner(soaptar,dtext);
         }
     	catch (IOException e1) {
     	  e1.printStackTrace();
