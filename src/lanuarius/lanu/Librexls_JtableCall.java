@@ -99,12 +99,11 @@ ArrayList<String> list = new ArrayList<>();
 //					list.add(dtext);
 					RosPickupList aClass = new RosPickupList();
 					aClass.addListfromJtable(list);
-									
 					dtext= dtext.replace("[   ]", "[" + lab_data + "]");
-					dtext= dtext.replace("        ", "\n\t    ");
-					dtext= dtext.replace(">•", ".");
 					}
 				}
+				dtext= dtext.replace(".", ".\n\t\t");
+				dtext= dtext.replace(">•", ".");
 				fcp1.writeliner(soaptar,dtext);
         }
     	catch (IOException e1) {
