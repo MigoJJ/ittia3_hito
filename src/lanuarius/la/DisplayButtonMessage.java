@@ -17,7 +17,7 @@ public class DisplayButtonMessage extends JFrame {
 		String  b[]={"GFS","CFS","EKG","Chest_PA","-","-",
 				"ROS","H","ExtraLab","ExtraLab_fix",
 				"9PLAN","ThyPx","Chest_Pain","N",
-				"O","P","Q","R","S","T","U","V","W","X","Y","Exit"};
+				"Physical_Exam","P","Q","R","S","T","U","V","W","X","Y","Exit"};
 		for(i = 0; i < buttons.length; i++) {
 			buttons[i] = new JButton(b[i]);
 			buttons[i].setPreferredSize(new Dimension(300, 60));

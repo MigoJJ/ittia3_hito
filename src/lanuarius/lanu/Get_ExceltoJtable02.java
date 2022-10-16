@@ -25,6 +25,9 @@ public class Get_ExceltoJtable02 {
 			{soaptarget=(soaptarget + "/6OBJ");prefixi=("Ⓖ GFS : ");}	
 		else if (choice== "CFS") 
 			{soaptarget=(soaptarget + "/6OBJ");prefixi=("Ⓒ CFS : ");}
+		else if (choice== "Physical_Exam") 
+		{soaptarget=(soaptarget + "/6OBJ");prefixi=("");}
+		
 		else if (choice== "ROS") 
 			{soaptarget=(soaptarget + "/4PMH");prefixi=(">");jframeH=1500;jframeW=900;}
 		else if (choice== "9PLAN") 
