@@ -104,6 +104,8 @@ ArrayList<String> list = new ArrayList<>();
 				}
 				dtext= dtext.replace(".", ".\n\t\t");
 				dtext= dtext.replace(">•", ".");
+				dtext= dtext.replace(",.", ",");
+
 				fcp1.writeliner(soaptar,dtext);
         }
     	catch (IOException e1) {
