@@ -102,10 +102,11 @@ ArrayList<String> list = new ArrayList<>();
 					dtext= dtext.replace("[   ]", "[" + lab_data + "]");
 					}
 				}
-				dtext= dtext.replace(".", ".\n\t\t");
 				dtext= dtext.replace(">•", ".");
-				dtext= dtext.replace(",.", ",");
-
+				if (argscho=="ROS"){
+					dtext= dtext.replace(".", ".\n\t\t");
+					dtext= dtext.replace(",.", ",");
+				}
 				fcp1.writeliner(soaptar,dtext);
         }
     	catch (IOException e1) {
