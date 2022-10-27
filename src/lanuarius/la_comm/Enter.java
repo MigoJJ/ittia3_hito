@@ -11,7 +11,7 @@ public class Enter {
 	public static void main(String[] args){
 		System.out.println("Continue the program ? : ");
 		System.out.println(" Migo JJ");
-		DisplayButtonMessage.main(args);
+		DisplayButtonMessage.main(null);
     }
 }
 
