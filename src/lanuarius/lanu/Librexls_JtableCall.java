@@ -93,7 +93,7 @@ ArrayList<String> list = new ArrayList<>();
          
 	     File_cdrw_proc fcp1 = new File_cdrw_proc(); 
          try {
-				if (argscho=="ExtraLab"){
+				if (argscho=="ExtraLab"| argscho=="ThyPx"){
 					Scanner myObj = new Scanner(System.in);  // Create a Scanner object
 					System.out.println(dtext + "   Enter Lab DATA ...   : ");
 					String lab_data = myObj.nextLine();  // Read user input
