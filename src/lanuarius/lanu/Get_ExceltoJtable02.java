@@ -52,5 +52,3 @@ public class Get_ExceltoJtable02 {
 		 
 	 }
 }
-//Ⓖ	 Ⓒ	Ⓟ Ⓓ 	{soaptarget=("");prefixi=("");}
-//https://ecgwaves.com/wp-content/uploads/2017/10/Pocket-guide-ECG-interpretation.pdf

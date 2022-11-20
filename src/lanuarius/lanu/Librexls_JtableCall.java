@@ -2,6 +2,9 @@ package lanuarius.lanu;
 
 import java.io.*;								
 import java.util.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 import javax.swing.*;
 
 import java.awt.Component;
@@ -94,12 +97,16 @@ ArrayList<String> list = new ArrayList<>();
 					Scanner myObj = new Scanner(System.in);  // Create a Scanner object
 					System.out.println(dtext + "   Enter Lab DATA ...   : ");
 					String lab_data = myObj.nextLine();  // Read user input
-					
 					if (lab_data !="") {
-//					list.add(dtext);
-					RosPickupList aClass = new RosPickupList();
-					aClass.addListfromJtable(list);
-					dtext= dtext.replace("[   ]", "[" + lab_data + "]");
+					    Pattern pattern = Pattern.compile("[   ]", Pattern.CASE_INSENSITIVE);
+					    Matcher matcher = pattern.matcher(dtext);
+					    boolean matchFound = matcher.find();
+					    if(matchFound) {
+					      System.out.println("Match found");
+					      dtext= dtext.replace("[   ]", "[ " + lab_data + " ]");
+					    } else {
+					      System.out.println("Match not found");
+					    }
 					}
 				}
 				dtext= dtext.replace(">•", ".");
