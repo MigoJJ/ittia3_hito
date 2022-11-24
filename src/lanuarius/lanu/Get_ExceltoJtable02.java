@@ -27,6 +27,17 @@ public class Get_ExceltoJtable02 {
 			{soaptarget=(soaptarget + "/6OBJ");prefixi=("Ⓒ CFS : ");}
 		else if (choice== "Physical_Exam") 
 		{soaptarget=(soaptarget + "/6OBJ");prefixi=("");}
+
+		else if (choice== "CC") 
+		{soaptarget=(soaptarget + "/3CC");prefixi=("");jframeH=600;jframeW=600;}
+		else if (choice== "PI") 
+		{soaptarget=(soaptarget + "/3CC");prefixi=("");jframeH=600;jframeW=600;}
+		else if (choice== "PMH") 
+		{soaptarget=(soaptarget + "/4PMH");prefixi=("");jframeH=600;jframeW=600;}
+		else if (choice== "Sujective") 
+		{soaptarget=(soaptarget + "/5SUJ");prefixi=("");jframeH=600;jframeW=600;}
+		else if (choice== "objective") 
+		{soaptarget=(soaptarget + "/6OBJ");prefixi=("");jframeH=600;jframeW=600;}
 		
 		else if (choice== "ROS") 
 			{soaptarget=(soaptarget + "/4PMH");prefixi=(">");jframeH=1500;jframeW=900;}

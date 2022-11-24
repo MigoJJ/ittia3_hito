@@ -21,7 +21,7 @@ import lanuarius.la_comm.Enter;
 import lanuarius.la_comm.File_cdrw_proc;
 import rosArray.RosPickupList;
 
-public class Librexls_JtableCall {
+public class Librexls_JtableCall3 {
 	 public static void main(String xlspath, String soaptit, String soaptar, String argscho, int jframeH, int jframeW)
 	 {
 		 Vector headers = new Vector();
@@ -93,16 +93,20 @@ ArrayList<String> list = new ArrayList<>();
          
 	     File_cdrw_proc fcp1 = new File_cdrw_proc(); 
          try {
-			    if(dtext.contains("[   ]")) {
-			    	Scanner myObj = new Scanner(System.in);  // Create a Scanner object
+				if (argscho=="ExtraLab"|argscho=="9PLAN"){
+					Scanner myObj = new Scanner(System.in);  // Create a Scanner object
 					System.out.println(dtext + "   Enter Lab DATA ...   : ");
 					String lab_data = myObj.nextLine();  // Read user input
 					if (lab_data !="") {
+					    Pattern pattern = Pattern.compile("[   ]", Pattern.CASE_INSENSITIVE);
+					    Matcher matcher = pattern.matcher(dtext);
+					    boolean matchFound = matcher.find();
+					    if(matchFound) {
 					      System.out.println("Match found");
 					      dtext= dtext.replace("[   ]", "[ " + lab_data + " ]");
-
-					} else {
+					    } else {
 					      System.out.println("Match not found");
+					    }
 					}
 				}
 				dtext= dtext.replace(">•", ".");
@@ -118,6 +122,6 @@ ArrayList<String> list = new ArrayList<>();
         if (! source.isRowSelected(row))
           source.changeSelection(row, column, false, false);
      	}
-	 });
+	});
 	 }
 }
