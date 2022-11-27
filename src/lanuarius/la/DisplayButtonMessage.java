@@ -22,7 +22,7 @@ public class DisplayButtonMessage extends JFrame {
 		for(i = 0; i < buttons.length; i++) {
 			buttons[i] = new JButton(b[i]);
 			buttons[i].setPreferredSize(new Dimension(300, 60));
-			buttons[i].setFont(new Font("Arial", Font.PLAIN, 16));
+			buttons[i].setFont(new Font("Arial", Font.BOLD, 16));
 			buttons[i].setSize(80, 80);
 			buttons[i].setActionCommand(b[i]);
 			buttons[i].addActionListener(new ActionListener(){
