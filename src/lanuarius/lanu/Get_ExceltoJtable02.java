@@ -54,7 +54,7 @@ public class Get_ExceltoJtable02 extends Enter{
 			soaptarget=(Enter.wd + "/output_select_Jtable");prefixi=("");
 		}
 			
-		 Librexls_JtableCall.main("/home/migowj/ittia1_chart/addjar_ittia1/ittia1_button/lanuarius/lanu/Lanuarius.xls",prefixi,soaptarget,choice,jframeH,jframeW);
+		 Librexls_JtableCall.main("/home/migowj/git/GDS_Jtable/src/lanuarius/lanu/Lanuarius.xls",prefixi,soaptarget,choice,jframeH,jframeW);
 //		 Librexls_JtableCall.main(wd + "/src/lanuarius/lanu/Lanuarius.xls",prefixi,soaptarget,choice,jframeH,jframeW);
 		 
 	 }
