@@ -12,7 +12,6 @@ public class Enter {
 	public static void main(String[] args){
 		System.out.println("Continue the program ? : ");
 		System.out.println(" Migo JJ  wd  " + wd);
-
 		System.out.println(" Migo JJ  jwd  " + jwd);
 		DisplayButtonMessage.main(null);
     }

@@ -9,8 +9,8 @@ import lanuarius.lanu.Librexls_JtableCall;
 
 public class Get_ExceltoJtable02 extends Enter{
 	 public static void main(String choice) {
-		 String soaptarget = jwd;
-		 String prefixi ="";
+		String soaptarget = jwd;
+		String prefixi ="";
 		int jframeH =1200;
 		int jframeW=800;
 
@@ -33,7 +33,7 @@ public class Get_ExceltoJtable02 extends Enter{
 			{soaptarget=(soaptarget + "/4PMH");prefixi=("");jframeH=600;jframeW=600;}
 		else if (choice== "Sujective") 
 			{soaptarget=(soaptarget + "/5SUJ");prefixi=("");jframeH=600;jframeW=600;}
-		else if (choice== "objective") 
+		else if (choice== "Objective") 
 			{soaptarget=(soaptarget + "/6OBJ");prefixi=("");jframeH=600;jframeW=600;}
 		
 		else if (choice== "ROS") 
