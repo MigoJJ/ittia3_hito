@@ -41,6 +41,7 @@ public class DisplayButtonMessage extends JFrame {
 		frame.add(panel);
 		frame.pack();
 		frame.setVisible(true);
+		frame.setLocation(1300,350);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
 }
