@@ -15,20 +15,20 @@ public class Get_ExceltoJtable02 extends Enter{
 		int jframeW=800;
 
 		if (choice== "EKG") 
-			{soaptarget=(soaptarget + "/6OBJ");prefixi=("Ⓔ EKG : ");jframeH=1400;jframeW=600;}
+			{soaptarget=(soaptarget + "/6OBJ");prefixi=("Ⓔ EKG : ");jframeH=1400;jframeW=800;}
 		else if (choice== "Chest_PA") 
 			{soaptarget=(soaptarget + "/6OBJ");prefixi=("Ⓟ chest PA : ");jframeH=800;jframeW=800;}
 		else if (choice== "GFS") 
 			{soaptarget=(soaptarget + "/6OBJ");prefixi=("Ⓖ GFS : ");}	
 		else if (choice== "CFS") 
-			{soaptarget=(soaptarget + "/6OBJ");prefixi=("Ⓒ CFS : ");}
+			{soaptarget=(soaptarget + "/6OBJ");prefixi=("Ⓒ CFS : ");jframeH=1500;jframeW=800;}
 		else if (choice== "Physical_Exam") 
 			{soaptarget=(soaptarget + "/6OBJ");prefixi=("");}
 
 		else if (choice== "CC") 
 			{soaptarget=(soaptarget + "/3CC");prefixi=("");jframeH=600;jframeW=600;}
 		else if (choice== "PI") 
-			{soaptarget=(soaptarget + "/3CC");prefixi=("");jframeH=600;jframeW=600;}
+			{soaptarget=(soaptarget + "/3CC");prefixi=("");jframeH=1200;jframeW=800;}
 		else if (choice== "PMH") 
 			{soaptarget=(soaptarget + "/4PMH");prefixi=("");jframeH=600;jframeW=600;}
 		else if (choice== "Sujective") 
@@ -39,15 +39,15 @@ public class Get_ExceltoJtable02 extends Enter{
 		else if (choice== "ROS") 
 			{soaptarget=(soaptarget + "/4PMH");prefixi=(">");jframeH=1500;jframeW=900;}
 		else if (choice== "9PLAN") 
-		{soaptarget=(soaptarget + "/9PLAN");prefixi=("...");}
+		{soaptarget=(soaptarget + "/9PLAN");prefixi=("...");jframeH=1500;jframeW=900;}
 		
 		else if (choice== "ThyPx") 
 			{soaptarget=(soaptarget + "/9PLAN");prefixi=("...");jframeH=1100;jframeW=550;}
 		
 		else if (choice== "ExtraLab") 
-			{soaptarget=(soaptarget + "/6OBJ");prefixi=("");jframeH=600;jframeW=600;}
+			{soaptarget=(soaptarget + "/6OBJ");prefixi=("");jframeH=800;jframeW=600;}
 		else if (choice== "ExtraLab_fix") 
-			{soaptarget=(soaptarget + "/6OBJ");prefixi=("");jframeH=600;jframeW=600;}
+			{soaptarget=(soaptarget + "/6OBJ");prefixi=("");jframeH=800;jframeW=600;}
 		else if (choice== "Chest_Pain") 
 			{soaptarget=(soaptarget + "/3CC");prefixi=("");jframeH=1150;jframeW=500;}
 		else {
