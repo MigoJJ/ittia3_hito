@@ -68,6 +68,10 @@ public class Librexls_JtableCall {
 			 f.setResizable(true);
 			 f.setVisible(true);
 			 f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+			 
+			 
+			 
 		 DefaultTableModel model = new DefaultTableModel(data,headers);
 			 Font  f1  = new Font("Consolas", Font.PLAIN,  15);
 			 table.setFont(f1);
@@ -84,15 +88,31 @@ ArrayList<String> list = new ArrayList<>();
 
  table.addMouseListener( new MouseAdapter(){
 	 public void mousePressed(MouseEvent e){
+		 
+		 
+		 
          JTable source = (JTable)e.getSource();
          int row = source.rowAtPoint( e.getPoint() );
          int column = source.columnAtPoint( e.getPoint() );
          String dtext = ("\t" + soaptit + table.getValueAt(row, column)).toString(); 
-         
+       
          System.out.println("String dtext = " + dtext);
+    
+
+         
          
 	     File_cdrw_proc fcp1 = new File_cdrw_proc(); 
          try {
+        	 
+//	         if (dtext =="Exit"){
+//	    		 f.dispatchEvent(new WindowEvent(f, WindowEvent.WINDOW_CLOSING));
+//	    		 f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+//	    		 f.dispose();
+//
+//	             }
+//        	 
+//        	 
+        	 
 			    if(dtext.contains("[   ]")) {
 			    	Scanner myObj = new Scanner(System.in);  // Create a Scanner object
 					System.out.println(dtext + "   Enter Lab DATA ...   : ");
@@ -120,4 +140,11 @@ ArrayList<String> list = new ArrayList<>();
      	}
 	 });
 	 }
+	 
+	 
+	
+	 
+	 
+	 
+	 
 }
