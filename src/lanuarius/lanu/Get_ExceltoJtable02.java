@@ -51,7 +51,9 @@ public class Get_ExceltoJtable02 extends Enter{
 		else if (choice== "Chest_Pain") 
 			{soaptarget=(soaptarget + "/3CC");prefixi=("");jframeH=1150;jframeW=500;}
 		else if (choice== "Exit") 
-		{soaptarget=(soaptarget + "/3CC");prefixi=("");jframeH=1150;jframeW=500;}
+		{			
+			System.exit(0);
+		}
 		else {
 			soaptarget=(Enter.wd + "/output_select_Jtable");prefixi=("");
 		}
