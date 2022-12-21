@@ -1,71 +1,32 @@
 package lanuarius.la;
 
-import java.io.*;
-
-import javax.swing.JFrame;
-
 import lanuarius.la_comm.Enter;
 
 public class Get_EJt extends Enter{
-	 public static void main(String choice) {
-		String soaptarget = jwd;
-		String prefixi ="";
-		int jframeH =1200;
-		int jframeW=800;
+	public static void main(String choice) {
+		if (choice== "EKG") 		{Get_EJt.callJtable(choice,jwd+"/6OBJ","Ⓔ EKG : ",1200,800);}
+		else if (choice== "Chest_PA") {Get_EJt.callJtable(choice,jwd + "/6OBJ","Ⓟ chest PA : ",800,800);}
+		else if (choice== "GFS")	{Get_EJt.callJtable(choice,jwd+"/6OBJ","Ⓖ GFS : ",800,800);}
+		else if (choice== "CFS")	{Get_EJt.callJtable(choice,jwd+"/6OBJ","Ⓒ CFS : ",800,800);}
+		else if (choice== "Physical_Exam"){Get_EJt.callJtable(choice,jwd+"/6OBJ","",800,800);}
 
-		if (choice== "EKG") {Get_EJt.callJtable(jwd+"/6OBJ", "Ⓔ EKG : ", 1200, 800);}
-		else if (choice== "Chest_PA") {(jwd + "/6OBJ");"Ⓟ chest PA : ";800;800;}
-		else if (choice== "GFS") 
-			{soaptarget=(soaptarget + "/6OBJ");prefixi=("Ⓖ GFS : ");}	
-		else if (choice== "CFS") 
-			{soaptarget=(soaptarget + "/6OBJ");prefixi=("Ⓒ CFS : ");jframeH=1500;jframeW=800;}
-		else if (choice== "Physical_Exam") 
-			{soaptarget=(soaptarget + "/6OBJ");prefixi=("");}
+		else if (choice== "CC") {Get_EJt.callJtable(choice,jwd+"/3CC","",800,800);}
+		else if (choice== "PI") {Get_EJt.callJtable(choice,jwd+"/3CC","",800,800);}
+		else if (choice== "ROS"){Get_EJt.callJtable(choice,jwd+"/4PMH","",800,800);}
+		else if (choice== "PMH"){Get_EJt.callJtable(choice,jwd+"/4PMH","",800,800);} 
+		else if (choice== "Sujective")	{Get_EJt.callJtable(choice,jwd+"/5SUJ","",800,800);} 
+		else if (choice== "Objective")	{Get_EJt.callJtable(choice,jwd+"/6OBJ","",800,800);} 
+		else if (choice== "ExtraLab")	{Get_EJt.callJtable(choice,jwd+"/6OBJ","",800,800);} 
+		else if (choice== "ExtraLab_fix") {Get_EJt.callJtable(choice,jwd+"/6OBJ","",800,800);} 
 
-		else if (choice== "CC") 
-			{soaptarget=(soaptarget + "/3CC");prefixi=("");jframeH=600;jframeW=600;}
-		else if (choice== "PI") 
-			{soaptarget=(soaptarget + "/3CC");prefixi=("");jframeH=1200;jframeW=800;}
-		else if (choice== "PMH") 
-			{soaptarget=(soaptarget + "/4PMH");prefixi=("");jframeH=600;jframeW=600;}
-		else if (choice== "Sujective") 
-			{soaptarget=(soaptarget + "/5SUJ");prefixi=("");jframeH=600;jframeW=600;}
-		else if (choice== "Objective") 
-			{soaptarget=(soaptarget + "/6OBJ");prefixi=("");jframeH=600;jframeW=600;}
-		
-		else if (choice== "ROS") 
-			{soaptarget=(soaptarget + "/4PMH");prefixi=(">");jframeH=1500;jframeW=900;}
-		else if (choice== "9PLAN") 
-		{soaptarget=(soaptarget + "/9PLAN");prefixi=("...");jframeH=1500;jframeW=900;}
-		
-		else if (choice== "ThyPx") 
-			{soaptarget=(soaptarget + "/9PLAN");prefixi=("...");jframeH=1100;jframeW=550;}
-		
-		else if (choice== "ExtraLab") 
-			{soaptarget=(soaptarget + "/6OBJ");prefixi=("");jframeH=800;jframeW=600;}
-		else if (choice== "ExtraLab_fix") 
-			{soaptarget=(soaptarget + "/6OBJ");prefixi=("");jframeH=800;jframeW=600;}
-		else if (choice== "Chest_Pain") 
-			{soaptarget=(soaptarget + "/3CC");prefixi=("");jframeH=1150;jframeW=500;}
-		else if (choice== "Exit") 
-		{			
-			System.exit(0);
-		}
-		else {
-			soaptarget=(Enter.wd + "/output_select_Jtable");prefixi=("");
-		}
-//		Librexls_JtableCall.main("/home/migowj/git/GDS_Jtable/src/lanuarius/lanu/Lanuarius.xls",prefixi,soaptarget,choice,jframeH,jframeW);
-//		Librexls_JtableCall.main(wd + "/src/lanuarius/lanu/Lanuarius.xls",prefixi,soaptarget,choice,jframeH,jframeW);
+		else if (choice== "9PLAN") 	{Get_EJt.callJtable(choice,jwd+"/9PLAN","",800,800);} 
+		else if (choice== "ThyPx") 	{Get_EJt.callJtable(choice,jwd+"/9PLAN","",800,800);} 
+		else if (choice== "Exit") 	{System.exit(0);}
+		else {}
 	 }
 	 
-		public static void callJtable(String starget, String tprefix, int fH, int fW) extends main{
+		public static void callJtable(String choice, String starget, String tprefix, int fH, int fW) {
 			System.out.println("Continue the program ? : ");
-			soaptarget = starget;
-			prefixi=tprefix;
-			jframeH=fH;
-			jframeW=fW;
-			
-			Librexls_JtableCall.main(wd + "/src/lanuarius/lanu/Lanuarius.xls",prefixi,soaptarget,choice,jframeH,jframeW);
- 
+		    Librexls_JtableCall.main(wd + "/src/lanuarius/lanu/Lanuarius.xls",tprefix,starget,choice,fH,fW);
 		}
 }

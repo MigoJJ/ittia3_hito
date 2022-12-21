@@ -28,7 +28,7 @@ public class DisplayButtonMessage extends JFrame {
 				public void actionPerformed(ActionEvent e) {
 				  String choice = e.getActionCommand();
 //				  JOptionPane.showMessageDialog(null, "You have clicked: "+choice);
-				  Get_ExceltoJtable02.main(choice);
+				  Get_EJt.main(choice);
 				  }
 			});
 			panel.add(buttons[i]);
