@@ -6,17 +6,15 @@ import javax.swing.JFrame;
 
 import lanuarius.la_comm.Enter;
 
-public class Get_ExceltoJtable02 extends Enter{
+public class Get_EJt extends Enter{
 	 public static void main(String choice) {
 		String soaptarget = jwd;
 		String prefixi ="";
 		int jframeH =1200;
 		int jframeW=800;
 
-		if (choice== "EKG") 
-			{soaptarget=(soaptarget + "/6OBJ");prefixi=("Ⓔ EKG : ");jframeH=1400;jframeW=800;}
-		else if (choice== "Chest_PA") 
-			{soaptarget=(soaptarget + "/6OBJ");prefixi=("Ⓟ chest PA : ");jframeH=800;jframeW=800;}
+		if (choice== "EKG") {Get_EJt.callJtable(jwd+"/6OBJ", "Ⓔ EKG : ", 1200, 800);}
+		else if (choice== "Chest_PA") {(jwd + "/6OBJ");"Ⓟ chest PA : ";800;800;}
 		else if (choice== "GFS") 
 			{soaptarget=(soaptarget + "/6OBJ");prefixi=("Ⓖ GFS : ");}	
 		else if (choice== "CFS") 
@@ -56,12 +54,18 @@ public class Get_ExceltoJtable02 extends Enter{
 		else {
 			soaptarget=(Enter.wd + "/output_select_Jtable");prefixi=("");
 		}
-			
-		 Librexls_JtableCall.main("/home/migowj/git/GDS_Jtable/src/lanuarius/lanu/Lanuarius.xls",prefixi,soaptarget,choice,jframeH,jframeW);
-//		 Librexls_JtableCall.main(wd + "/src/lanuarius/lanu/Lanuarius.xls",prefixi,soaptarget,choice,jframeH,jframeW);
+//		Librexls_JtableCall.main("/home/migowj/git/GDS_Jtable/src/lanuarius/lanu/Lanuarius.xls",prefixi,soaptarget,choice,jframeH,jframeW);
+//		Librexls_JtableCall.main(wd + "/src/lanuarius/lanu/Lanuarius.xls",prefixi,soaptarget,choice,jframeH,jframeW);
 	 }
 	 
-	 
-	 
-	 
+		public static void callJtable(String starget, String tprefix, int fH, int fW) extends main{
+			System.out.println("Continue the program ? : ");
+			soaptarget = starget;
+			prefixi=tprefix;
+			jframeH=fH;
+			jframeW=fW;
+			
+			Librexls_JtableCall.main(wd + "/src/lanuarius/lanu/Lanuarius.xls",prefixi,soaptarget,choice,jframeH,jframeW);
+ 
+		}
 }
