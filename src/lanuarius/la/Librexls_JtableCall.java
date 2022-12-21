@@ -1,4 +1,4 @@
-package lanuarius.lanu;
+package lanuarius.la;
 
 import java.io.*;								
 import java.util.*;
@@ -16,12 +16,11 @@ import javax.swing.table.*;
 import jxl.Cell;
 import jxl.Sheet;
 import jxl.Workbook;
-import lanuarius.la.DisplayButtonMessage;
 import lanuarius.la_comm.Enter;
 import lanuarius.la_comm.File_cdrw_proc;
 import rosArray.RosPickupList;
 
-public class Librexls_JtableCall3 {
+public class Librexls_JtableCall {
 	 public static void main(String xlspath, String soaptit, String soaptar, String argscho, int jframeH, int jframeW)
 	 {
 		 Vector headers = new Vector();
@@ -68,6 +67,10 @@ public class Librexls_JtableCall3 {
 			 f.setResizable(true);
 			 f.setVisible(true);
 			 f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+			 
+			 
+			 
 		 DefaultTableModel model = new DefaultTableModel(data,headers);
 			 Font  f1  = new Font("Consolas", Font.PLAIN,  15);
 			 table.setFont(f1);
@@ -84,29 +87,41 @@ ArrayList<String> list = new ArrayList<>();
 
  table.addMouseListener( new MouseAdapter(){
 	 public void mousePressed(MouseEvent e){
+		 
+		 
+		 
          JTable source = (JTable)e.getSource();
          int row = source.rowAtPoint( e.getPoint() );
          int column = source.columnAtPoint( e.getPoint() );
          String dtext = ("\t" + soaptit + table.getValueAt(row, column)).toString(); 
-         
+       
          System.out.println("String dtext = " + dtext);
+    
+
+         
          
 	     File_cdrw_proc fcp1 = new File_cdrw_proc(); 
          try {
-				if (argscho=="ExtraLab"|argscho=="9PLAN"){
-					Scanner myObj = new Scanner(System.in);  // Create a Scanner object
+        	 
+//	         if (dtext =="Exit"){
+//	    		 f.dispatchEvent(new WindowEvent(f, WindowEvent.WINDOW_CLOSING));
+//	    		 f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+//	    		 f.dispose();
+//
+//	             }
+//        	 
+//        	 
+        	 
+			    if(dtext.contains("[   ]")) {
+			    	Scanner myObj = new Scanner(System.in);  // Create a Scanner object
 					System.out.println(dtext + "   Enter Lab DATA ...   : ");
 					String lab_data = myObj.nextLine();  // Read user input
 					if (lab_data !="") {
-					    Pattern pattern = Pattern.compile("[   ]", Pattern.CASE_INSENSITIVE);
-					    Matcher matcher = pattern.matcher(dtext);
-					    boolean matchFound = matcher.find();
-					    if(matchFound) {
 					      System.out.println("Match found");
 					      dtext= dtext.replace("[   ]", "[ " + lab_data + " ]");
-					    } else {
+
+					} else {
 					      System.out.println("Match not found");
-					    }
 					}
 				}
 				dtext= dtext.replace(">•", ".");
@@ -122,6 +137,13 @@ ArrayList<String> list = new ArrayList<>();
         if (! source.isRowSelected(row))
           source.changeSelection(row, column, false, false);
      	}
-	});
+	 });
 	 }
+	 
+	 
+	
+	 
+	 
+	 
+	 
 }

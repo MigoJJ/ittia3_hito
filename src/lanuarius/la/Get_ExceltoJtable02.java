@@ -1,11 +1,10 @@
-package lanuarius.lanu;
+package lanuarius.la;
 
 import java.io.*;
 
 import javax.swing.JFrame;
 
 import lanuarius.la_comm.Enter;
-import lanuarius.lanu.Librexls_JtableCall;
 
 public class Get_ExceltoJtable02 extends Enter{
 	 public static void main(String choice) {
@@ -60,6 +59,9 @@ public class Get_ExceltoJtable02 extends Enter{
 			
 		 Librexls_JtableCall.main("/home/migowj/git/GDS_Jtable/src/lanuarius/lanu/Lanuarius.xls",prefixi,soaptarget,choice,jframeH,jframeW);
 //		 Librexls_JtableCall.main(wd + "/src/lanuarius/lanu/Lanuarius.xls",prefixi,soaptarget,choice,jframeH,jframeW);
-		 
 	 }
+	 
+	 
+	 
+	 
 }
