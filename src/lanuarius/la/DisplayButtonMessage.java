@@ -13,11 +13,13 @@ public class DisplayButtonMessage extends JFrame {
 	public DisplayButtonMessage(){
 		JButton[] buttons = new JButton[26];
 		panel=new JPanel(new GridLayout(13,2));
-		String  b[]={"GFS","CFS","EKG","Chest_PA","-","-",
+		String  b[]={"GFS","CFS","EKG","Chest_PA",
+				"ExtraLab","ExtraLab_fix",
+				"-","-",
 				"CC","PI","PMH", "ROS","Physical_Exam","-",
-				"Subjective","Objective","ExtraLab","ExtraLab_fix",
+				"Subjective","Objective",
 				"9PLAN","-","ThyPx","-","Chest_Pain",
-				"-","-","-","-","Exit"};
+				"DM_complications","-","-","-","Exit"};
 		for(i = 0; i < buttons.length; i++) {
 			buttons[i] = new JButton(b[i]);
 			buttons[i].setPreferredSize(new Dimension(300, 60));

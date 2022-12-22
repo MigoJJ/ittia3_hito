@@ -21,6 +21,8 @@ public class Get_EJt extends Enter{
 
 		else if (choice== "9PLAN") 	{Get_EJt.callJtable(choice,jwd+"/9PLAN","",800,800);} 
 		else if (choice== "ThyPx") 	{Get_EJt.callJtable(choice,jwd+"/9PLAN","",800,800);} 
+		else if (choice== "DM_complications") 	{Get_EJt.callJtable(choice,jwd+"/6OBJ","⚝",800,800);} 
+
 		else if (choice== "Exit") 	{System.exit(0);}
 		else {}
 	}
