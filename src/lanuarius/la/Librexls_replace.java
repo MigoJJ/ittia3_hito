@@ -18,7 +18,7 @@ public class Librexls_replace {
 			}
 		}
 		dtext= dtext.replace(">•", ".");
-		dtext= dtext.replace(".", ".\n\t\t");
+		dtext= dtext.replace("⬋", ".\n\t\t");
 		dtext= dtext.replace(",.", ",");
 		
 		return dtext; 
