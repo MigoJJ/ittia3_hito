@@ -17,7 +17,6 @@ public class DisplayButtonMessage extends JFrame {
 				"EKG","Chest_PA",
 				"ExtraLab","ExtraLab_fix",
 				"-","-",
-<<<<<<< HEAD
 				"CC","PI","PMH", "ROS",
 				"Subjective","Objective",
 				"Physical_Exam","-",
@@ -25,12 +24,7 @@ public class DisplayButtonMessage extends JFrame {
 				"-","Chest_Pain",
 				"-","DM_complication",
 				"-","-","Exit"};
-=======
-				"CC","PI","PMH", "ROS","Physical_Exam","-",
-				"Subjective","Objective",
-				"9PLAN","-","ThyPx","-","Chest_Pain",
-				"DM_complication","-","-","-","Exit"};
->>>>>>> refs/remotes/origin/GDS221209
+
 		for(i = 0; i < buttons.length; i++) {
 			buttons[i] = new JButton(b[i]);
 			buttons[i].setPreferredSize(new Dimension(300, 60));
