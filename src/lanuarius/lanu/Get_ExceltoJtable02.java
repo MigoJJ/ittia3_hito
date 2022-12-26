@@ -1,11 +1,9 @@
 package lanuarius.lanu;
 
-import java.io.*;
-
+import java.io.*;	
 import javax.swing.JFrame;
-
+import lanuarius.la.Librexls_JtableCall;
 import lanuarius.la_comm.Enter;
-import lanuarius.lanu.Librexls_JtableCall;
 
 public class Get_ExceltoJtable02 extends Enter{
 	 public static void main(String choice) {
