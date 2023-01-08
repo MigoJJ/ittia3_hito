@@ -6,8 +6,8 @@ public class Enter {
 // ------------------------------------------------------user directory definition
 	public static String currentUsersHomeDir = System.getProperty("user.dir" );
 	public static String wd = (currentUsersHomeDir);
-	public static String jwd = ("/home/migoey/ittia1_chart/je/panse/doro/text/samsara");
-//	public static String jwd = ("/home/migowj/ittia1_chart/je/panse/doro/text/samsara");
+//	public static String jwd = ("/home/migoey/ittia1_chart/je/panse/doro/text/samsara");
+	public static String jwd = ("/home/migowj/ittia1_chart/je/panse/doro/text/samsara");
 //	public static String jwd = ("/home/migowj/ittia1_chart/src/je/panse/doro/text/samsara");
 	
 	public static void main(String[] args){
