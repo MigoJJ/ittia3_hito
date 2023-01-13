@@ -13,7 +13,9 @@ public class Get_EJt extends Enter{
 		else if (choice== "CC") {Get_EJt.callJtable(choice,jwd+"/3CC","",800,800);}
 		else if (choice== "PI") {Get_EJt.callJtable(choice,jwd+"/3CC","",800,800);}
 		else if (choice== "ROS"){Get_EJt.callJtable(choice,jwd+"/4PMH","",800,800);}
+		
 		else if (choice== "PMH"){Get_EJt.callJtable(choice,jwd+"/4PMH","",800,800);} 
+		
 		else if (choice== "Sujective")	{Get_EJt.callJtable(choice,jwd+"/5SUJ","",800,800);} 
 		else if (choice== "Objective")	{Get_EJt.callJtable(choice,jwd+"/6OBJ","",800,800);} 
 		else if (choice== "ExtraLab")	{Get_EJt.callJtable(choice,jwd+"/6OBJ","",800,800);} 
@@ -30,7 +32,8 @@ public class Get_EJt extends Enter{
 	 
 	public static void callJtable(String choice, String starget, String tprefix, int fH, int fW) {
 			System.out.println("Continue the program ? : ");
-		    Librexls_JtableCall.main(wd + "/src/lanuarius/lanu/Lanuarius.xls",tprefix,starget,choice,fH,fW);
+//		    Librexls_JtableCall.main(wd + "/src/lanuarius/lanu/Lanuarius.xls",tprefix,starget,choice,fH,fW);
+		    Librexls_JtableCall.main(wd + "/lanuarius/lanu/Lanuarius.xls",tprefix,starget,choice,fH,fW);
 
 	}
 }
