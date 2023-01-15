@@ -6,6 +6,7 @@ import javax.swing.*;
 import lanuarius.la_comm.Enter;
 
 import java.awt.event.*;
+import java.io.IOException;
 
 public class DisplayButtonMessage extends JFrame {
 	int i=0;
@@ -32,13 +33,18 @@ public class DisplayButtonMessage extends JFrame {
 			buttons[i].setSize(80, 80);
 			buttons[i].setActionCommand(b[i]);
 			buttons[i].addActionListener(new ActionListener(){
-				public void actionPerformed(ActionEvent e) {
+		public void actionPerformed(ActionEvent e) {
 				  String choice = e.getActionCommand();
 //				  JOptionPane.showMessageDialog(null, "You have clicked: "+choice);
-				  Get_EJt.main(choice);
+				  try {
+						Get_EJt.main(choice);
+					} catch (IOException e1) {
+						// TODO Auto-generated catch block
+						e1.printStackTrace();
+					}
 				  }
-			});
-			panel.add(buttons[i]);
+		});
+		panel.add(buttons[i]);
 		}
 	}
 	public static void main(String[] args){
