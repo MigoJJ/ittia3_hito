@@ -30,6 +30,7 @@ public class DisplayButtonMessage extends JFrame {
 			buttons[i].setPreferredSize(new Dimension(300, 60));
 			buttons[i].setFont(new Font("Arial", Font.BOLD, 16));
 			buttons[i].setSize(80, 80);
+			button.setBackground(Color.GREEN);
 			buttons[i].setActionCommand(b[i]);
 			buttons[i].addActionListener(new ActionListener(){
 				public void actionPerformed(ActionEvent e) {
