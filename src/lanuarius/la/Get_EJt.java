@@ -1,9 +1,12 @@
 package lanuarius.la;
 
+import java.io.IOException;
+import java.io.InputStream;
+
 import lanuarius.la_comm.Enter;
 
 public class Get_EJt extends Enter{
-	public static void main(String choice) {
+	public static void main(String choice) throws IOException {
 		if (choice== "EKG") 		{Get_EJt.callJtable(choice,jwd+"/6OBJ","Ⓔ EKG : ",1200,800);}
 		else if (choice== "Chest_PA") {Get_EJt.callJtable(choice,jwd + "/6OBJ","Ⓟ chest PA : ",800,800);}
 		else if (choice== "GFS")	{Get_EJt.callJtable(choice,jwd+"/6OBJ","Ⓖ GFS : ",800,800);}
@@ -12,7 +15,15 @@ public class Get_EJt extends Enter{
 
 		else if (choice== "CC") {Get_EJt.callJtable(choice,jwd+"/3CC","",800,800);}
 		else if (choice== "PI") {Get_EJt.callJtable(choice,jwd+"/3CC","",800,800);}
-		else if (choice== "ROS"){Get_EJt.callJtable(choice,jwd+"/4PMH","",800,800);}
+		
+		else if (choice== "ROS"){
+            String udbu =("/home/migowj/ittia1_chart/addjar_ittia2");
+            String jarName =("java -jar " + udbu + "/ittia1jros.jar");
+            Process proc = Runtime.getRuntime().exec(jarName);
+            InputStream in = proc.getInputStream();
+            InputStream err = proc.getErrorStream();
+				
+		}
 		
 		else if (choice== "PMH"){Get_EJt.callJtable(choice,jwd+"/4PMH","",800,800);} 
 		
@@ -32,8 +43,8 @@ public class Get_EJt extends Enter{
 	 
 	public static void callJtable(String choice, String starget, String tprefix, int fH, int fW) {
 			System.out.println("Continue the program ? : ");
-//		    Librexls_JtableCall.main(wd + "/src/lanuarius/lanu/Lanuarius.xls",tprefix,starget,choice,fH,fW);
-		    Librexls_JtableCall.main("/home/migowj/git/GDS_Jtable/src/lanuarius/lanu/Lanuarius.xls",tprefix,starget,choice,fH,fW);
+//		    Librexls_JtableCall.main(wd +"/src/lanuarius/lanu/Lanuarius.xls",tprefix,starget,choice,fH,fW);
+		    Librexls_JtableCall.main(wd +"/lanuarius/lanu/Lanuarius.xls",tprefix,starget,choice,fH,fW);
 
 	}
 }
