@@ -17,7 +17,7 @@ public class Get_EJt extends Enter{
 		else if (choice== "PI") {Get_EJt.callJtable(choice,jwd+"/3CC","",800,800);}
 		
 		else if (choice== "ROS"){
-            String udbu =("/home/migowj/ittia1_chart/addjar_ittia2");
+            String udbu =("/home/migowj/ittia_chart/addjar_ittia2");
             String jarName =("java -jar " + udbu + "/ittia1jros.jar");
             Process proc = Runtime.getRuntime().exec(jarName);
             InputStream in = proc.getInputStream();
