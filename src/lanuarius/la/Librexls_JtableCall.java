@@ -76,9 +76,9 @@ public class Librexls_JtableCall {
 			 model = new DefaultTableModel(data, headers);
 			 table.setModel(model);
 			 table.setRowHeight(30);
-			 table.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);
-	//		 table.getColumnModel().getColumn(0).setPreferredWidth(450);
-	//		 table.getColumnModel().getColumn(1).setPreferredWidth(450);
+			 table.setAutoResizeMode(JTable.AUTO_RESIZE_ALL_COLUMNS);
+//		 table.getColumnModel().getColumn(0).setPreferredWidth(450);
+//		 table.getColumnModel().getColumn(1).setPreferredWidth(450);
 			 
 ArrayList<String> list = new ArrayList<>();
  table.addMouseListener( new MouseAdapter(){

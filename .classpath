@@ -6,27 +6,27 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/migowj/Linux/drivers/SparseBitSet-1.2.jar"/>
-	<classpathentry kind="lib" path="/home/migowj/Linux/drivers/commons-codec-1.15.jar"/>
-	<classpathentry kind="lib" path="/home/migowj/Linux/drivers/commons-collections4-4.4.jar"/>
-	<classpathentry kind="lib" path="/home/migowj/Linux/drivers/commons-compress-1.21.jar"/>
-	<classpathentry kind="lib" path="/home/migowj/Linux/drivers/commons-io-2.11.0.jar"/>
-	<classpathentry kind="lib" path="/home/migowj/Linux/drivers/commons-logging-1.2.jar"/>
-	<classpathentry kind="lib" path="/home/migowj/Linux/drivers/commons-math3-3.6.1.jar"/>
-	<classpathentry kind="lib" path="/home/migowj/Linux/drivers/curvesapi-1.07.jar"/>
-	<classpathentry kind="lib" path="/home/migowj/Linux/drivers/jxl-2.6.jar"/>
-	<classpathentry kind="lib" path="/home/migowj/Linux/drivers/log4j-api-2.17.2.jar"/>
-	<classpathentry kind="lib" path="/home/migowj/Linux/drivers/log4j-core-2.17.2.jar"/>
-	<classpathentry kind="lib" path="/home/migowj/Linux/drivers/poi-5.2.2.jar"/>
-	<classpathentry kind="lib" path="/home/migowj/Linux/drivers/poi-examples-5.2.2.jar"/>
-	<classpathentry kind="lib" path="/home/migowj/Linux/drivers/poi-excelant-5.2.2.jar"/>
-	<classpathentry kind="lib" path="/home/migowj/Linux/drivers/poi-javadoc-5.2.2.jar"/>
-	<classpathentry kind="lib" path="/home/migowj/Linux/drivers/poi-ooxml-5.2.2.jar"/>
-	<classpathentry kind="lib" path="/home/migowj/Linux/drivers/poi-ooxml-full-5.2.2.jar"/>
-	<classpathentry kind="lib" path="/home/migowj/Linux/drivers/poi-ooxml-lite-5.2.2.jar"/>
-	<classpathentry kind="lib" path="/home/migowj/Linux/drivers/poi-scratchpad-5.2.2.jar"/>
-	<classpathentry kind="lib" path="/home/migowj/Linux/drivers/rs2xml.jar"/>
-	<classpathentry kind="lib" path="/home/migowj/Linux/drivers/slf4j-api-1.7.36.jar"/>
-	<classpathentry kind="lib" path="/home/migowj/Linux/drivers/xmlbeans-5.0.3.jar"/>
+	<classpathentry kind="lib" path="/home/migoey/Linux/Drivers/SparseBitSet-1.2.jar"/>
+	<classpathentry kind="lib" path="/home/migoey/Linux/Drivers/commons-codec-1.15.jar"/>
+	<classpathentry kind="lib" path="/home/migoey/Linux/Drivers/commons-collections4-4.4.jar"/>
+	<classpathentry kind="lib" path="/home/migoey/Linux/Drivers/commons-compress-1.21.jar"/>
+	<classpathentry kind="lib" path="/home/migoey/Linux/Drivers/commons-io-2.11.0.jar"/>
+	<classpathentry kind="lib" path="/home/migoey/Linux/Drivers/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="/home/migoey/Linux/Drivers/commons-math3-3.6.1.jar"/>
+	<classpathentry kind="lib" path="/home/migoey/Linux/Drivers/curvesapi-1.07.jar"/>
+	<classpathentry kind="lib" path="/home/migoey/Linux/Drivers/jxl-2.6.jar"/>
+	<classpathentry kind="lib" path="/home/migoey/Linux/Drivers/log4j-api-2.17.2.jar"/>
+	<classpathentry kind="lib" path="/home/migoey/Linux/Drivers/log4j-core-2.17.2.jar"/>
+	<classpathentry kind="lib" path="/home/migoey/Linux/Drivers/poi-5.2.2.jar"/>
+	<classpathentry kind="lib" path="/home/migoey/Linux/Drivers/poi-examples-5.2.2.jar"/>
+	<classpathentry kind="lib" path="/home/migoey/Linux/Drivers/poi-excelant-5.2.2.jar"/>
+	<classpathentry kind="lib" path="/home/migoey/Linux/Drivers/poi-javadoc-5.2.2.jar"/>
+	<classpathentry kind="lib" path="/home/migoey/Linux/Drivers/poi-ooxml-5.2.2.jar"/>
+	<classpathentry kind="lib" path="/home/migoey/Linux/Drivers/poi-ooxml-full-5.2.2.jar"/>
+	<classpathentry kind="lib" path="/home/migoey/Linux/Drivers/poi-ooxml-lite-5.2.2.jar"/>
+	<classpathentry kind="lib" path="/home/migoey/Linux/Drivers/poi-scratchpad-5.2.2.jar"/>
+	<classpathentry kind="lib" path="/home/migoey/Linux/Drivers/rs2xml.jar"/>
+	<classpathentry kind="lib" path="/home/migoey/Linux/Drivers/slf4j-api-1.7.36.jar"/>
+	<classpathentry kind="lib" path="/home/migoey/Linux/Drivers/xmlbeans-5.0.3.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
