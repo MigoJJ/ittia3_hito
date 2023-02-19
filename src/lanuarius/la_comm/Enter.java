@@ -7,7 +7,7 @@ public class Enter {
 	public static String currentUsersHomeDir = System.getProperty("user.dir" );
 	public static String wd = (currentUsersHomeDir);
 //	public static String jwd = ("/home/migoey/ittia_chart/je/panse/doro/text/samsara");
-	public static String jwd = ("/home/migowj/ittia_chart/je/panse/doro/text/samsara");
+	public static String jwd = (wd  + "/ittia_chart/je/panse/doro/text/samsara");
 
 	public static void main(String[] args){
 		System.out.println("Continue the program ? : ");
