@@ -11,7 +11,7 @@ public class Get_EJt extends Enter{
 		else if (choice== "Chest_PA") {Get_EJt.callJtable(choice,jwd + "/6OBJ","Ⓟ chest PA : ");}
 		else if (choice== "GFS")	{Get_EJt.callJtable(choice,jwd+"/6OBJ","Ⓖ GFS : ");}
 		else if (choice== "CFS")	{Get_EJt.callJtable(choice,jwd+"/6OBJ","Ⓒ CFS : ");}
-		else if (choice== "Physical_Exam"){Get_EJt.callJtable(choice,jwd+"/6OBJ","");}
+		else if (choice== "Physical_Exam"){Get_EJt.callJtable(choice,wd+"/6OBJ","");}
 
 		else if (choice== "CC") {Get_EJt.callJtable(choice,jwd+"/3CC","");}
 		else if (choice== "PI") {Get_EJt.callJtable(choice,jwd+"/3CC","");}
