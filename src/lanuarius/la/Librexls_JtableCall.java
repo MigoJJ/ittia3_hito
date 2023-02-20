@@ -21,7 +21,7 @@ import lanuarius.la_comm.File_cdrw_proc;
 import rosArray.RosPickupList;
 
 public class Librexls_JtableCall {
-	 public static void main(String xlspath, String soaptit, String soaptar, String argscho, int jframeH, int jframeW)
+	 public static void main(String xlspath, String soaptit, String soaptar, String argscho)
 	 {
 		 Vector headers = new Vector();
 		 Vector data = new Vector();
@@ -62,8 +62,8 @@ public class Librexls_JtableCall {
 		 JScrollPane scroll = new JScrollPane(table);
 		 JFrame f=new JFrame();
 		 	 f.add(scroll);
-			 f.setSize(jframeH, jframeW);
 			 f.setLocationRelativeTo(null); 
+			 f.setSize(1200, 800);
 			 f.setResizable(true);
 			 f.setVisible(true);
 			 f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
