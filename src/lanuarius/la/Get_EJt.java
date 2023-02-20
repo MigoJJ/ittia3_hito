@@ -43,8 +43,8 @@ public class Get_EJt extends Enter{
 	 
 	public static void callJtable(String choice, String starget, String tprefix) {
 			System.out.println("Continue the program ? : ");
-		    Librexls_JtableCall.main(wd +"/src/lanuarius/lanu/Lanuarius.xls",tprefix,starget,choice);
-//		    Librexls_JtableCall.main(wd +"/lanuarius/lanu/Lanuarius.xls",tprefix,starget,choice);
+//		    Librexls_JtableCall.main(wd +"/src/lanuarius/lanu/Lanuarius.xls",tprefix,starget,choice);
+		    Librexls_JtableCall.main(wd +"/lanuarius/lanu/Lanuarius.xls",tprefix,starget,choice);
 
 	}
 }
