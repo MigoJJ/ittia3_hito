@@ -17,7 +17,7 @@ public class Get_EJt extends Enter{
 		else if (choice== "PI") {Get_EJt.callJtable(choice,jwd+"/3CC","",800,800);}
 		
 		else if (choice== "ROS"){
-            String udbu =("/home/migowj/ittia_chart/addjar_ittia2");
+            String udbu =(wd + "/ittia_chart/addjar_ittia2");
             String jarName =("java -jar " + udbu + "/ittia1jros.jar");
             Process proc = Runtime.getRuntime().exec(jarName);
             InputStream in = proc.getInputStream();
@@ -44,8 +44,7 @@ public class Get_EJt extends Enter{
 	public static void callJtable(String choice, String starget, String tprefix, int fH, int fW) {
 			System.out.println("Continue the program ? : ");
 //		    Librexls_JtableCall.main(wd +"/src/lanuarius/lanu/Lanuarius.xls",tprefix,starget,choice,fH,fW);
-		    Librexls_JtableCall.main(wd +"/src/lanuarius/lanu/Lanuarius.xls",tprefix,starget,choice,fH,fW);
-//		    Librexls_JtableCall.main(wd +"/lanuarius/lanu/Lanuarius.xls",tprefix,starget,choice,fH,fW);
+		    Librexls_JtableCall.main(wd +"/lanuarius/lanu/Lanuarius.xls",tprefix,starget,choice,fH,fW);
 
 	}
 }
